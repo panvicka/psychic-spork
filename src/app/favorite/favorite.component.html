@@ -1,0 +1,14 @@
+<p>favorite works!</p>
+<span 
+    class = "fa-star"
+    [class.fas]="isFavorite"
+    [class.far]="!isFavorite"
+    [class.highlighted]="isFavorite"
+    style="font-size:60px;"
+    (click)="onClick()">
+</span>
+
+<span>{{isFavorite}}</span>
+
+
+ 

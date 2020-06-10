@@ -1,0 +1,37 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<p>parameter works!</p>
+<h2>{{getTitle() + " " + parameters.length}}</h2> <!-- interpolation / lepsi pro texty atd -->
+<h2 [textContent]="getTitle()"> </h2> <!-- property binding -->
+
+<ul>
+    <li *ngFor="let parameter of parameters">
+        {{parameter}}
+    </li>
+</ul>
+
+<img src="{{imageUrl}}" /> <!-- interpolation / lepsi pro texty atd -->
+<img [src]="imageUrl" /> <!-- property binding -->
+
+<table border>
+    <tr>
+        <td [attr.colspan]="colSpan">test</td> <!-- dom is not Http -->
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+
+</table>
+
+<button class="btn btn-primary" [class.active]="isActive"
+    [style.backgroundColor]="isActive ? 'blue':'white'">SAVE</button> <!-- class binding/style binding with property -->
+<button (click)="onSave($event)">Save</button> <!-- event binding -->
+<br>
+<br>
+<br>
+
+  
+
+  <!--  <span class="glyphicon glyphicon-record"></span> -->
+ 
