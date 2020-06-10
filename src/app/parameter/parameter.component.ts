@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParameterComponent implements OnInit {
 
-  title = "List of parameter";
+  title = "List of parameters";
   parameters: string[];
   imageUrl = "https://via.placeholder.com/150";
   colSpan = 2;
